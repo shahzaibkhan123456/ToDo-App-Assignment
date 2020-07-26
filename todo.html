@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+</head>
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: "montserrat",sans-serif;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-image: linear-gradient(120deg,#487eb0,#fbc531);
+        min-height: 100vh;
+    }
+
+    .container{
+        max-width: 800px;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .txtb{
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid #000;
+        background: none;
+        padding: 10px;
+        outline:none;
+        font-size: 18px;
+    }
+
+    h3{
+        margin: 10px 0;
+
+    }
+
+    .task{
+        width: 100%;
+        background: rgba(255, 255, 255, 0.5);
+        padding: 18px;
+        margin: 6px 0;
+        overflow:hidden;
+
+    }
+
+    .task i{
+        float: right;
+        margin-left: 20px;
+        cursor: pointer;
+
+    }
+    .comp .task{
+        background: rgba(0, 0, 0,.5);
+        color: #fff; 
+    }
+
+
+</style>
+
+<body>
+    <div class="container">
+        <input type="text" class="txtb" placeholder="What's Your Today Task">
+        <div class="notcomp">
+            <h3>Not Completed</h3>
+
+        <!-- <div class="task">
+            task
+            <i class="fa fa-trash-alt"></i>
+            <i class="fa fa-check"></i>
+        </div>     -->
+
+        <!-- <div class="task">
+            task
+            <i class="fa fa-trash-alt"></i>
+            <i class="fa fa-check"></i>
+        </div> -->
+    </div>
+    <div class="comp">
+        <h3>Completed</h3>
+
+    <!-- <div class="task">
+        task
+        <i class="fa fa-trash-alt"></i>
+       
+    </div>    
+
+    <div class="task">
+        task
+        <i class="fa fa-trash-alt"></i>
+        
+    </div> -->
+</div>
+    
+    </div>  
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="todo.js"></script>
+</html>
